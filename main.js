@@ -45,7 +45,7 @@ function findSecretConstant(jsonData) {
 function processTestCases(testCases) {
     testCases.forEach((testCase, index) => {
         let result = findSecretConstant(testCase);
-        console.log(`The constant term (c) for test case ${index + 1} is: ${result}`);
+        console.log(`Secret key for test case ${index + 1} is: ${result}`);
     });
 }
 const testCase1 = {
