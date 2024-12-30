@@ -49,7 +49,7 @@ function processTestCasesFromFile(fileNames) {
     fileNames.forEach((fileName, index) => {
         const jsonData = JSON.parse(fs.readFileSync(fileName, 'utf8'));
         let result = findSecretConstant(jsonData);
-        console.log(Secret key for test case ${index + 1} from file ${fileName} is: ${result});
+        console.log('Secret key for test case ${index + 1} from file ${fileName} is: ${result}');
     });
 }
 const testCaseFiles = ['./testcase1.json', './testcase2.json'];
